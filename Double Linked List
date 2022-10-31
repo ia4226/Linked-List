@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+using namespace std;
+class node
+{
+public:
+int data; 
+node*prev;}
+void push(node**head-ref, int new_data);
+{
+node*new_node=new node();
+new node-> data = new_data;
+new_node-> next = (*head_ref);
+new_npde-> prev = NULL;
+if(
+(*head_ref)!= NULL)
+(*head_ref)->prev = new_node;
+new_node-> new_node;}
+}
+{node*new_node = new node();
+new_node -> data = new_data;
+new_node -> next = prev_node -> next;
+prev_node -> next = new_node;
+new_node -> prev = prev_node;
+if(new_node -> next!= NULL)
+new node -> nexr -> prev = new_node;
+void(node**head_ref, int new_data)
+{ node*new_data();
+node*last = *head_ref;
+new_node -> data = new_data;
+new_node -> next = NULL;
+if(*head_ref == NULL){
+new_node -> prev = NULL;
+*head_ref = new_node;
+return;
+}
+void printList(Node*node)
+{Node*last;
+cout<<"\n Traversal in Forward Direction\n";
+while (node!= NULL){
+cout <<" "<< node -> data<<" ";
+last = node; node = node -> next;
+}
+cout <<"\n Traversal in Reverse Direction\n ;}
+while(node!= NULL){
+cout << " "<< last -> data << " ";
+last = last -> prev;}}
+int main()
+{
+Node*head = NULL;
+append(&head, z);
+push(&head, 6);
+push(&head, 5);
+append (&head, 0);
+insert after (head-> next, 8);
+insert after (head-> next, 2);
+cout << "Created Doubly Linked List: ";
+printList(head);
+return 0;
+}
